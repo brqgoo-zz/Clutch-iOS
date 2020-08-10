@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectiblesCollectionViewCell" id="gTV-IL-0wX" customClass="CollectiblesCollectionViewCell" customModule="Clutch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nlk-s3-KXq">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pu1-hx-I3y">
+                                <rect key="frame" x="12" y="12" width="177" height="177"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="JNK-Hj-aS8">
+                                        <rect key="frame" x="18" y="7" width="140" height="162"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ymb-uD-d7r">
+                                                <rect key="frame" x="0.0" y="0.0" width="140" height="140.5"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39K-Gc-FHZ">
+                                                <rect key="frame" x="5" y="142.5" width="130" height="19.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="19.5" id="MVO-SD-e8V"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Ymb-uD-d7r" firstAttribute="leading" secondItem="JNK-Hj-aS8" secondAttribute="leadingMargin" id="JX7-s2-DXJ"/>
+                                            <constraint firstItem="39K-Gc-FHZ" firstAttribute="leading" secondItem="JNK-Hj-aS8" secondAttribute="leading" constant="5" id="feO-7m-owI"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="TableCellColor"/>
+                                <constraints>
+                                    <constraint firstItem="JNK-Hj-aS8" firstAttribute="centerX" secondItem="pu1-hx-I3y" secondAttribute="centerX" id="2v1-dT-1HI"/>
+                                    <constraint firstItem="JNK-Hj-aS8" firstAttribute="top" secondItem="pu1-hx-I3y" secondAttribute="top" constant="7" id="axY-cV-1a5"/>
+                                    <constraint firstItem="JNK-Hj-aS8" firstAttribute="centerY" secondItem="pu1-hx-I3y" secondAttribute="centerY" id="htP-Kq-M11"/>
+                                    <constraint firstItem="JNK-Hj-aS8" firstAttribute="leading" secondItem="pu1-hx-I3y" secondAttribute="leading" constant="18" id="ntP-Od-bZV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="pu1-hx-I3y" firstAttribute="top" secondItem="Nlk-s3-KXq" secondAttribute="top" constant="12" id="10k-B8-NJy"/>
+                            <constraint firstItem="pu1-hx-I3y" firstAttribute="centerY" secondItem="Nlk-s3-KXq" secondAttribute="centerY" id="1GW-TX-JtQ"/>
+                            <constraint firstItem="pu1-hx-I3y" firstAttribute="centerX" secondItem="Nlk-s3-KXq" secondAttribute="centerX" id="GXk-eP-Goy"/>
+                            <constraint firstItem="pu1-hx-I3y" firstAttribute="leading" secondItem="Nlk-s3-KXq" secondAttribute="leading" constant="12" id="OCC-uB-SKq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Nlk-s3-KXq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0eW-f8-qV3"/>
+                <constraint firstAttribute="bottom" secondItem="Nlk-s3-KXq" secondAttribute="bottom" id="hho-df-ycs"/>
+                <constraint firstItem="Nlk-s3-KXq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="uIX-dq-MEk"/>
+                <constraint firstAttribute="trailing" secondItem="Nlk-s3-KXq" secondAttribute="trailing" id="xmO-EQ-lhO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="200" height="200"/>
+            <connections>
+                <outlet property="CollectionCellImageView" destination="Ymb-uD-d7r" id="QKH-B5-CJB"/>
+                <outlet property="CollectionCellLabel" destination="39K-Gc-FHZ" id="lxk-o4-Kdk"/>
+                <outlet property="CollectionCellView" destination="pu1-hx-I3y" id="eCs-re-poi"/>
+            </connections>
+            <point key="canvasLocation" x="240.57971014492756" y="178.79464285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="TableCellColor">
+            <color red="0.99500000476837158" green="0.99000000953674316" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
